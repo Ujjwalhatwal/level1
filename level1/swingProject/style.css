@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #0f62fe;
+  font-family: sans-serif;
+}
+#head-text{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: #0f62fe;
+
+}
+
+.container {
+  width: 40%;
+  top: 30%;
+  left: 50%;
+  background: white;
+  border-radius: 10px;
+  min-width: 450px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%, -50%);
+  padding-bottom: 20px;
+}
+
+#newtask {
+  padding: 30px 20px;
+}
+
+#newtask input {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid #33B1FF;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: #0D75EC;
+}
+
+#newtask button {
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0F62FE;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+}
+
+#tasks {
+  padding: 0 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#tasks::-webkit-scrollbar {
+  width: 10px;
+}
+#tasks::-webkit-scrollbar-track {
+  background: #bae6ff;
+  border-radius: 25px;
+}
+#tasks::-webkit-scrollbar-thumb {
+  background: #0d75ec;
+  border-radius: 25px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task p {
+  font-size: 15px;
+}
+
+.task p.checked {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.check-task {
+  margin-right: 10px;
+}
+
+.delete {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: #ff3b3b;
+  transition: transform 0.2s ease;
+}
+
+#no-task-msg {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
